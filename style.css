@@ -1,0 +1,134 @@
+html{
+    width: 1440px;
+    height: 960px;
+    margin: 0;
+}
+.container-skoda{
+    width: 1440px;
+    height: 960px;
+    background-color: white;
+    margin: 0;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+}
+.play{
+    display: none;
+}
+.btn-skoda{
+    background-color: #4ba82e;
+    color: white;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    width: 40%;
+}
+.question-image{
+    background-image: url('images/front.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+.question-image-2{
+    background-image: url('images/top.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+.zone-container{
+    position: absolute;
+    width: 1280px;
+    margin-top: 128px;
+    margin-left: 80px;
+    height: 512px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.zone-container-2{
+    position: absolute;
+    width: 456px;
+    margin-top: 240px;
+    margin-left: 336px;
+    height: 488px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: none;
+
+}
+.zone{
+    height: 18%;
+    width: 100%;
+    background-color: rgba(75,168,46,.7);
+    border: solid #4ba82e 2px;
+}
+
+.slider{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+}
+
+.slider h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 15px;
+    border-radius: 5px;  
+    background: rgb(240, 240, 240);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 0 auto;
+}
+  
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    background: #4ba82e;
+    cursor: pointer;
+}
+
+input[type='range']::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4ba82e;
+    cursor: pointer;
+}
+.scale{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    font-size: 20px;
+    padding: 10px 12px;
+}
+.scale small{
+    min-width: 16px;
+    text-align: center;
+    font-weight: 800;
+    color: rgb(133,133,133);
+}

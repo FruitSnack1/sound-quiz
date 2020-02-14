@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-skoda">
+        <div class="slide login">
+            <div class="login-container">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Zdejte osobní číslo">
+                </div>
+                <button class="btn btn-block btn-skoda" onclick="next()">Pokračovat</button>
+            </div>
+        </div>
+        <div class="slide play">
+            <div class="question-image">
+                <div class="zone-container">
+                    <div class="zone" onclick="next()"></div>
+                    <div class="zone" onclick="next()"></div>
+                    <div class="zone" onclick="next()"></div>
+                    <div class="zone" onclick="next()"></div>
+                    <div class="zone" onclick="next()"></div>
+                </div>
+
+                <div class="zone-container-2">
+                    <div class="zone" onclick="next()"></div>
+                    <div class="zone" onclick="next()"></div>
+                    <div class="zone" onclick="next()"></div>
+                    <div class="zone" onclick="next()"></div>
+                    <div class="zone" onclick="next()"></div>
+                </div>
+            </div>
+
+            <div class="slider">
+                <h1>Celkový dojem z prostorového nastavení</h1>
+                <input type="range" min="-5" max="5" step="1">
+                <div class="scale">
+                    <small>-5</small>
+                    <small>-4</small>
+                    <small>-3</small>
+                    <small>-2</small>
+                    <small>-1</small>
+                    <small>0</small>
+                    <small>1</small>
+                    <small>2</small>
+                    <small>3</small>
+                    <small>4</small>
+                    <small>5</small>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script src="jquery.js"></script>
+<script src="main.js"></script>
+
+</html>
