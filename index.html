@@ -14,33 +14,34 @@
         <div class="slide login">
             <div class="login-container">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Zdejte osobní číslo">
+                    <input type="text" class="form-control" id="personalNumber" placeholder="Zdejte osobní číslo">
                 </div>
                 <button class="btn btn-block btn-skoda" onclick="next()">Pokračovat</button>
             </div>
         </div>
         <div class="slide play">
-            <div class="question-image">
+            <div class="question-image" id="img1">
                 <div class="zone-container">
-                    <div class="zone" onclick="next()"></div>
-                    <div class="zone" onclick="next()"></div>
-                    <div class="zone" onclick="next()"></div>
-                    <div class="zone" onclick="next()"></div>
-                    <div class="zone" onclick="next()"></div>
+                    <div class="zone" onclick="next(1)"></div>
+                    <div class="zone" onclick="next(2)"></div>
+                    <div class="zone" onclick="next(3)"></div>
+                    <div class="zone" onclick="next(4)"></div>
+                    <div class="zone" onclick="next(5)"></div>
                 </div>
-
-                <div class="zone-container-2">
-                    <div class="zone" onclick="next()"></div>
-                    <div class="zone" onclick="next()"></div>
-                    <div class="zone" onclick="next()"></div>
-                    <div class="zone" onclick="next()"></div>
-                    <div class="zone" onclick="next()"></div>
+            </div>
+            <div class="question-image" id="img2" style="display: none;">
+                <div class="zone-container">
+                    <div class="zone" onclick="next(1)"></div>
+                    <div class="zone" onclick="next(2)"></div>
+                    <div class="zone" onclick="next(3)"></div>
+                    <div class="zone" onclick="next(4)"></div>
+                    <div class="zone" onclick="next(5)"></div>
                 </div>
             </div>
 
-            <div class="slider">
+            <div class="slider" id="slider1">
                 <h1>Celkový dojem z prostorového nastavení</h1>
-                <input type="range" min="-5" max="5" step="1">
+                <input type="range" min="-5" max="5" step="1" id="overall1">
                 <div class="scale">
                     <small>-5</small>
                     <small>-4</small>
@@ -54,9 +55,51 @@
                     <small>4</small>
                     <small>5</small>
                 </div>
+                <button class="btn btn-skoda" onclick="next($('#overall1').val())">Pokračovat</button>
             </div>
 
+            <div class="question-image" id="img3" style="display: none;">
+                <div class="zone-container">
+                    <div class="zone" onclick="next(1)"></div>
+                    <div class="zone" onclick="next(2)"></div>
+                    <div class="zone" onclick="next(3)"></div>
+                    <div class="zone" onclick="next(4)"></div>
+                    <div class="zone" onclick="next(5)"></div>
+                </div>
+            </div>
 
+            <div class="question-image" id="img4" style="display: none;">
+                <div class="zone-container">
+                    <div class="zone" onclick="next(1)"></div>
+                    <div class="zone" onclick="next(2)"></div>
+                    <div class="zone" onclick="next(3)"></div>
+                    <div class="zone" onclick="next(4)"></div>
+                    <div class="zone" onclick="next(5)"></div>
+                </div>
+            </div>
+
+            <div class="slider" id="slider2">
+                <h1>Celkový dojem z prostorového nastavení</h1>
+                <input type="range" min="-5" max="5" step="1" id="overall2">
+                <div class="scale">
+                    <small>-5</small>
+                    <small>-4</small>
+                    <small>-3</small>
+                    <small>-2</small>
+                    <small>-1</small>
+                    <small>0</small>
+                    <small>1</small>
+                    <small>2</small>
+                    <small>3</small>
+                    <small>4</small>
+                    <small>5</small>
+                </div>
+                <button class="btn btn-skoda" onclick="next($('#overall2').val())">Pokračovat</button>
+            </div>
+
+        </div>
+        <div class="slide end" style="display: none;">
+            <h1>Děkujeme za spolupráci</h1>
         </div>
     </div>
 </body>
