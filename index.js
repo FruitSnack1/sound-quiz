@@ -26,4 +26,4 @@ app.post('/', (req, res) =>{
     })
 })
 
-app.listen(80, '192.168.0.54', () => console.log('Server Started'))
+app.listen(80, () => console.log('Server Started'))
