@@ -49,7 +49,7 @@ body{
 }
 #img1{background-image: url('images/front.png');}
 #img2{background-image: url('images/top.png');}
-#img3{background-image: url('images/back.jpg');}
+#img3{background-image: url('images/back.png');}
 #img4{background-image: url('images/top.png');}
 
 .zone-container{
@@ -88,6 +88,10 @@ body{
 #img2 .zone{
     height: 100%;
     width: 18%;
+}
+
+#img3 .zone-container{
+    margin-top: 85px;
 }
 #img4 .zone-container{
     width: 456px;
