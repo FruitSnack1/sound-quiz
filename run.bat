@@ -1,0 +1,1 @@
+start cmd /k nodemon &&  start chrome --start-fullscreen localhost
