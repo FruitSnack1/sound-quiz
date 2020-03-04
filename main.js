@@ -26,21 +26,36 @@ function next(value) {
             $('#slider1').css('display', 'flex').hide().fadeIn(300)
             break
         case 4:
-            result['driverSeatOverall'] = parseInt(value)
+            result['driverSeatOverall'] = value
             $('#slider1').hide()
-            $('#img3').fadeIn(300)
+            $('#slider3').css('display', 'flex').hide().fadeIn(300)
             break
         case 5:
+            result['barva'] = value
+            $('#slider3').hide()
+            $('#slider4').css('display', 'flex').hide().fadeIn(300)
+            break
+        case 6:
+            result['celkovyDojem'] = value
+            $('#slider4').hide()
+            $('#slider5').css('display', 'flex').hide().fadeIn(300)
+            break
+        case 7:
+            result['vibrace'] = parseInt(value)
+            $('#slider5').hide()
+            $('#img3').fadeIn(300)
+            break
+        case 8:
             result['backSeat'] = value
             $('#img3').hide()
             $('#img4').fadeIn(300)
             break
-        case 6:
+        case 9:
             result['backSeatTop'] = value
             $('#img4').hide()
             $('#slider2').css('display', 'flex').hide().fadeIn(300)
             break
-        case 7:
+        case 10:
             result['backSeatOverall'] = parseInt(value)
             $('#slider2').hide()
             $('.play').hide()
