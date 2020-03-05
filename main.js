@@ -79,6 +79,9 @@ function postResult() {
         $('#personalNumber').val('')
         $('#overall1').val(0)
         $('#overall2').val(0)
+        $('#barva').val(0)
+        $('#celkovyDojem').val(0)
+        $('#vibrace').val(0)
         next()
     }, 1500)
 }
